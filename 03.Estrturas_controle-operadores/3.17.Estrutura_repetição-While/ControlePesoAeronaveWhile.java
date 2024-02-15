@@ -35,10 +35,10 @@ public class ControlePesoAeronaveWhile {
 			
 			pesoTotalPassageiros += pesoPassageiro;
 			
-			// -> Não preciso ssomar em uma unidade o valor da variável
+			// -> Não preciso somar em uma unidade o valor da variável
 			// passageiroAtual++;
 			
-			// -> NOva verificação de continuidade do LOOP
+			// -> Nova verificação de continuidade do LOOP
 			System.out.print("Incluir novo passageiro? ");
 			incluirNovoPassageiro = entrada.nextBoolean();
 		}	
@@ -46,7 +46,7 @@ public class ControlePesoAeronaveWhile {
 		/* -> Para obter um LOOP INFINITO
 			while (true) {
 			
-				BLOCO DE CÓDIGO AQUI
+				/* BLOCO DE CÓDIGO AQUI  */
 		 	}
 		*/
 		

@@ -11,7 +11,7 @@ public class ControlePesoAeronaveDoWhile {
 		
 		int pesoTotalPassageiros = 0;
 		
-		// -> Mesmo a CONDIÇÃO DO LOOP "DO/ WHILE" sendo FALSA, o loop é nem lido PELO MENOS 1 (UMA) VEZ
+		// -> Mesmo a CONDIÇÃO DO LOOP "DO/ WHILE" sendo FALSA, o loop é "lido" PELO MENOS 1 (UMA) VEZ
 		// boolean incluirNovoPassageiro = true;
 		boolean incluirNovoPassageiro = false;
 		
@@ -30,6 +30,8 @@ public class ControlePesoAeronaveDoWhile {
 			incluirNovoPassageiro = entrada.nextBoolean();
 
 		// -> Nova verificação de continuidade do LOOP
+		/* OPERADOR LÓGICO "E" e condição FALSA vai ter resultado FALSO, PORÉM,
+			o BLOCO DE CÓDIGO do DO já foi "lido" */ 
 		} while (pesoTotalPassageiros <= pesoMaximo && incluirNovoPassageiro); 
 		
 		
