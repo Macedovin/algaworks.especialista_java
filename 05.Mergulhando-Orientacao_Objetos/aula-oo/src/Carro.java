@@ -5,7 +5,6 @@ public class Carro {
     String modelo;
     String cor;
     int anoFabricacao = 2022;
-    Pessoa proprietario;
-//    Novo ATRIBUTO com TIPO PRIMITIVO
-    boolean desligado;
+//    Inicializando a VARIÁVEL DE INSTÂNCIA -> Sobreescrvendo o VALOR PADRÃO "null"
+    Pessoa proprietario = new Pessoa();
 }
