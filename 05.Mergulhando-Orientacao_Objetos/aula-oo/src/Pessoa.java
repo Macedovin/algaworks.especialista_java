@@ -1,8 +1,6 @@
 public class Pessoa {
 
-//    Inicializando VARIÁVEL DE INSTÂNCIA em OBJETO COMPOSTO
-    String nome = "João";
+    String nome;
     String cpf;
     int anoNascimento;
-
 }
