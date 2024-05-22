@@ -43,20 +43,24 @@ public class Principal {
         seuCarro.fabricante = "BMW";
         seuCarro.proprietario = voce;
 
+//        -> Chamando/ Invocando o MÉTODO
+    meuCarro.calcularValorRevenda();
+    seuCarro.calcularValorRevenda();
+
 //        Imprimindo conteúdos na saída padrão
-
-        System.out.println("Meu carro");
-        System.out.println("------------------------");
-        System.out.printf("Modelo: %s%n", meuCarro.modelo);
-        System.out.printf("Ano: %d%n", meuCarro.anoFabricacao);
-        System.out.printf("Proprietário: %s%n", meuCarro.proprietario.nome);
-
-        System.out.println(); //-> Linha em branco/ QUEBRA DE LINHA
-
-        System.out.println("Seu carro");
-        System.out.println("------------------------");
-        System.out.printf("Modelo: %s%n", seuCarro.modelo);
-        System.out.printf("Ano: %d%n", seuCarro.anoFabricacao);
-        System.out.printf("Proprietário: %s%n", seuCarro.proprietario.nome);
+//
+//        System.out.println("Meu carro");
+//        System.out.println("------------------------");
+//        System.out.printf("Modelo: %s%n", meuCarro.modelo);
+//        System.out.printf("Ano: %d%n", meuCarro.anoFabricacao);
+//        System.out.printf("Proprietário: %s%n", meuCarro.proprietario.nome);
+//
+//        System.out.println(); //-> Linha em branco/ QUEBRA DE LINHA
+//
+//        System.out.println("Seu carro");
+//        System.out.println("------------------------");
+//        System.out.printf("Modelo: %s%n", seuCarro.modelo);
+//        System.out.printf("Ano: %d%n", seuCarro.anoFabricacao);
+//        System.out.printf("Proprietário: %s%n", seuCarro.proprietario.nome);
     }
 }

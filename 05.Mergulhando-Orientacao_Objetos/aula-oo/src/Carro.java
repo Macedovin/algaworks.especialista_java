@@ -5,4 +5,10 @@ public class Carro {
     String cor;
     int anoFabricacao;
     Pessoa proprietario;
+
+//    -> Cria o PRIMEIRO MÉTODO - Neste caso, MÉTODO  DE INSTÂNCIA
+    void calcularValorRevenda() {
+
+        System.out.printf("Calcular valor de revenda de: %s %d%n", modelo, anoFabricacao);
+    }
 }
