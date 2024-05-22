@@ -2,7 +2,7 @@ public class Principal {
 
     public static void main(String[] args) {
 
-//      Instanciadno NOVOS OBJETOS do tipo "Pessoa"
+//      Instanciando NOVOS OBJETOS do tipo "Pessoa"
 
         Pessoa eu = new Pessoa();
 
@@ -24,14 +24,18 @@ public class Principal {
         meuCarro.cor = "preto";
         meuCarro.modelo = "HR-V";
         meuCarro.fabricante = "Honda";
+//        -> Atribui valor a nova VARIÁVEL DE INSTÂNCIA
+        meuCarro.precoCompra = 120000;
         meuCarro.proprietario = eu;
 
 //	    Instanciando e atribuindo NOVO OBJETO "Pessoa" diretamente a OUTRO OBJETO "meuCarro"
 
-//        meuCarro.proprietario = new Pessoa();
-//        meuCarro.proprietario.nome = "Vinicius Macedo";
-//        meuCarro.proprietario.cpf = "114.115.117-34";
-//        meuCarro.proprietario.anoNascimento = 1986;
+/*
+        meuCarro.proprietario = new Pessoa();
+        meuCarro.proprietario.nome = "Vinicius Macedo";
+        meuCarro.proprietario.cpf = "114.115.117-34";
+        meuCarro.proprietario.anoNascimento = 1986;
+*/
 
         Carro seuCarro = new Carro();
 
@@ -41,6 +45,8 @@ public class Principal {
         seuCarro.cor = "Branco";
         seuCarro.modelo = "X6";
         seuCarro.fabricante = "BMW";
+//        -> Atribui valor a nova VARIÁVEL DE INSTÂNCIA
+        seuCarro.precoCompra = 980000;
         seuCarro.proprietario = voce;
 
 //        -> Chamando/ Invocando o MÉTODO
