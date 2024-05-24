@@ -50,8 +50,8 @@ public class Principal {
         seuCarro.proprietario = voce;
 
 //        -> Chamando/ Invocando o MÉTODO
-    meuCarro.calcularValorRevenda();
-    seuCarro.calcularValorRevenda();
+        meuCarro.calcularValorRevenda();
+        seuCarro.calcularValorRevenda();
 
 //        Imprimindo conteúdos na saída padrão
 //
