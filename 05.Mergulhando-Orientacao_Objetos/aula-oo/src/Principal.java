@@ -49,9 +49,22 @@ public class Principal {
         seuCarro.precoCompra = 980000;
         seuCarro.proprietario = voce;
 
+//        ->Refatoração para utilizar o RETORNO do MÉTODO
+//        System.out.println(meuCarro.calcularValorRevenda());
+
+//        ATRIBUINDO o VALOR do RETORNO a uma VARIÁVEL e imprimindo
+        double valorRevendaMeuCarro = meuCarro.calcularValorRevenda();
+//        System.out.println(valorRevendaMeuCarro);
+
+//        Refatoração que utiliza o RETORNO do MÉTODO, bem como REUTILIZA OS prints anteriormente nele
+//        -> Prints com os RESULTADOS do MÉTODO "calcularVAlorRevenda()"
+        System.out.printf("Tempo de uso (anos): %d%n", 2024 - meuCarro.anoFabricacao);
+        System.out.printf("Valor de revenda: %6.2f%n", valorRevendaMeuCarro);
+
+
 //        -> Chamando/ Invocando o MÉTODO
-        meuCarro.calcularValorRevenda();
-        seuCarro.calcularValorRevenda();
+//        meuCarro.calcularValorRevenda();
+//        seuCarro.calcularValorRevenda();
 
 //        Imprimindo conteúdos na saída padrão
 //

@@ -9,7 +9,8 @@ public class Carro {
     Pessoa proprietario;
 
 //    -> Cria o PRIMEIRO MÉTODO - Neste caso, MÉTODO  DE INSTÂNCIA
-    void calcularValorRevenda() {
+//    Refator o MÉTODO definindo um TIPO de RETORNO
+    double calcularValorRevenda() {
 
         int tempoDeUsoEmAnos = 2024 - anoFabricacao;
 
@@ -22,11 +23,12 @@ public class Carro {
             valorRevenda = 0;
         }
 
-//        -> Prints com os RESULTADOS do MÉTODO
-        System.out.printf("Tempo de uso (anos): %d%n", tempoDeUsoEmAnos);
-        System.out.printf("Valor de revenda: %6.2f%n", valorRevenda);
+//      -> Removidos do MÉTODO as linhas de print( )
 
 //      -> Print simples para teste do MÉTODO
 //        System.out.printf("Calcular valor de revenda de: %s %d%n", modelo, anoFabricacao);
+
+//        INSTRUÇÃO DE RETORNO
+        return valorRevenda;
     }
 }
