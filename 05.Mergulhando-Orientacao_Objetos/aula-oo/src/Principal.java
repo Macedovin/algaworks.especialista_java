@@ -25,7 +25,7 @@ public class Principal {
         meuCarro.modelo = "HR-V";
         meuCarro.fabricante = "Honda";
 //        -> Atribui valor a nova VARIÁVEL DE INSTÂNCIA
-        meuCarro.precoCompra = 120000;
+        meuCarro.precoCompra = 0;
         meuCarro.proprietario = eu;
 
 //	    Instanciando e atribuindo NOVO OBJETO "Pessoa" diretamente a OUTRO OBJETO "meuCarro"

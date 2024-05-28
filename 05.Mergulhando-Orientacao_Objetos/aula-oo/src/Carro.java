@@ -15,6 +15,14 @@ public class Carro {
 
         int tempoDeUsoMeuCarro = calcularTempoDeUsoEmAnos();
 
+// CONDICIONAL IF -> Isenção - Entendo a PALAVRA-CHAVE "return" em um MÉTODO "void"...
+        if (precoCompra <= 0) {
+
+            System.out.println("Carro com preço de compra zerado. Não foi possível imprimir resumo de depreciação.");
+
+            return;
+        }
+
 //        -> Prints com os RESULTADOS do MÉTODO "calcularValorRevenda()"
         System.out.printf("Tempo de uso (anos): %d%n", tempoDeUsoMeuCarro);
         System.out.printf("Valor de revenda: %6.2f%n", valorRevendaMeuCarro);
@@ -30,6 +38,14 @@ public class Carro {
 
 //    -> Novo MÉTODO que calcula valor do IPVA
     double calcularIpva() {
+
+        int tempoDeUsoEmAnos = calcularTempoDeUsoEmAnos();
+
+// CONDICIONAL IF -> Isenção - Entendo a PALAVRA-CHAVE "return"...
+        if (tempoDeUsoEmAnos >= 10) {
+
+            return 0;
+        }
 
         return calcularValorRevenda() * 0.04;
     }
