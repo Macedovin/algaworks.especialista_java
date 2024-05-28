@@ -18,7 +18,7 @@ public class Principal {
 
         Carro meuCarro = new Carro();
 
-//        Definindo ATRIBUTOS do OBEJTO "meuCarro"
+//        Definindo ATRIBUTOS do OBJETO "meuCarro"
 
         meuCarro.anoFabricacao = 2023;
         meuCarro.cor = "preto";
@@ -39,7 +39,7 @@ public class Principal {
 
         Carro seuCarro = new Carro();
 
-//        Definindo ATRIBUTOS do OBEJTO "seuCarro"
+//        Definindo ATRIBUTOS do OBJETO "seuCarro"
 
         seuCarro.anoFabricacao = 2021;
         seuCarro.cor = "Branco";
@@ -49,20 +49,32 @@ public class Principal {
         seuCarro.precoCompra = 980000;
         seuCarro.proprietario = voce;
 
-//        ->Refatoração para utilizar o RETORNO do MÉTODO
+//        -> Primeira refatoração para utilizar o RETORNO do MÉTODO
+//        Sem ATRIBUIÇÃO a uma VARIÁVEL
 //        System.out.println(meuCarro.calcularValorRevenda());
 
 //        ATRIBUINDO o VALOR do RETORNO a uma VARIÁVEL e imprimindo
-        double valorRevendaMeuCarro = meuCarro.calcularValorRevenda();
+//        double valorRevendaMeuCarro = meuCarro.calcularValorRevenda();
 //        System.out.println(valorRevendaMeuCarro);
-
+//
 //        Refatoração que utiliza o RETORNO do MÉTODO, bem como REUTILIZA OS prints anteriormente nele
 //        -> Prints com os RESULTADOS do MÉTODO "calcularVAlorRevenda()"
-        System.out.printf("Tempo de uso (anos): %d%n", 2024 - meuCarro.anoFabricacao);
-        System.out.printf("Valor de revenda: %6.2f%n", valorRevendaMeuCarro);
+//        System.out.printf("Tempo de uso (anos): %d%n", 2024 - meuCarro.anoFabricacao);
+//        System.out.printf("Valor de revenda: %6.2f%n", valorRevendaMeuCarro);
 
+//      -> TRECHO refatorado para novo MÉTODO DE INSTÂNCIA da classe "Carro"
+//      -Substituição das VARIÁVEIS e dos PRINTs() REFATORADOS
+        meuCarro.imprimirResumoDepreciacao();
+        seuCarro.imprimirResumoDepreciacao();
 
-//        -> Chamando/ Invocando o MÉTODO
+        System.out.println("-------------------"); // -> SEPARADOR
+
+//        -> Indo além... Chama o MÉTODO que imprime o VALOR do IPVA
+        meuCarro.imprimirValorIpva();
+        seuCarro.imprimirValorIpva();
+
+//        -> Chamando/ Invocando o MÉTODO (acessando os PRINTs que continha)
+//           - Antes de o MÉTODO ter um RETORNO
 //        meuCarro.calcularValorRevenda();
 //        seuCarro.calcularValorRevenda();
 
