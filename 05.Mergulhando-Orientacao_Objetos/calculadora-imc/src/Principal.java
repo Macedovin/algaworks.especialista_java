@@ -22,12 +22,17 @@ public class Principal {
 
         IndiceMassaCorporal imc = paciente.calcularIndiceMassaCorporal();
 
-        if (imc.resultado >= 30) {
+        if (imc.estaComObesidade()) {
 
             System.out.printf("Paciente com altura de %.2f e peso de %.2f " +
                     "está com obesidade.%n", imc.altura, imc.peso);
-        }
+        } else if (imc.estaAbaixoDoPesoIdeal()) {
 
-        System.out.printf("IMC: %.2f%n", imc.resultado);
+            System.out.printf("Paciente com altura de %.2f e peso de %.2f " +
+                    "está abaixo do peso ideal.%n", imc.altura, imc.peso);
+        } else {
+
+            System.out.printf("IMC normal: %.2f%n", imc.resultado);
+        }
     }
 }
