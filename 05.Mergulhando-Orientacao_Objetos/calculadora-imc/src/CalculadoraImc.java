@@ -1,18 +1,10 @@
 public class CalculadoraImc {
 
-    double peso;
-    double altura;
+// REMOVIDAS as VARIÁVEIS DE INSTÂNCIA que não fazem mais sentido com a CLASSE
 
-/*    double calcularIndiceMassaCorporal() {
-
-        double imcCalculado = peso / (altura * altura);
-
-        return imcCalculado;
-    }*/
-
-//    Refatorando o MÉTODO para retornar um OBJETO
-//    -> Refatorando também o NOME DO MÉTODO
-    IndiceMassaCorporal calcular() {
+//  -> MÉTODO que retorna um OBJETO
+//    Agora com ARGUMENTOS/ PARÂMETROS
+    IndiceMassaCorporal calcular(double peso, double altura) {
 
 //      -> Novo OBJETO de escopo no MÉTODO
         IndiceMassaCorporal imc = new IndiceMassaCorporal();

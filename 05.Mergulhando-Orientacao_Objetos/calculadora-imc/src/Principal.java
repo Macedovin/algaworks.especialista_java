@@ -6,21 +6,21 @@ public class Principal {
 
         CalculadoraImc calculadoraImc = new CalculadoraImc();
 
-/*      -> HARD CODED
-
-        paciente.altura = 1.82;
-        paciente.peso = 75;*/
-
 //        -> Utilizando a CLASSE Scanner
         Scanner entrada = new Scanner(System.in);
 
+//  -> REFATORANDO as entradas para serem armazenadas em VARIÁVEIS
         System.out.println("Digite sua altura: ");
-        calculadoraImc.altura = entrada.nextDouble();
+        double altura = entrada.nextDouble();
 
         System.out.println("Digite seu peso: ");
-        calculadoraImc.peso = entrada.nextDouble();
+        double peso = entrada.nextDouble();
 
-        IndiceMassaCorporal imc = calculadoraImc.calcular();
+//  1. Passando VALORES LITERAIS como ARGUMENTO
+//  IndiceMassaCorporal imc = calculadoraImc.calcular(75, 1.82);
+
+//  2. Passando VARIÁVEIS que referenciam valores como ARGUMENTO
+    IndiceMassaCorporal imc = calculadoraImc.calcular(peso, altura);
 
         if (imc.estaComObesidade()) {
 
