@@ -1,4 +1,4 @@
-public class Paciente {
+public class CalculadoraImc {
 
     double peso;
     double altura;
@@ -10,8 +10,9 @@ public class Paciente {
         return imcCalculado;
     }*/
 
-//    Refatorando o MÉTODO para retronar um OBJETO
-    IndiceMassaCorporal calcularIndiceMassaCorporal() {
+//    Refatorando o MÉTODO para retornar um OBJETO
+//    -> Refatorando também o NOME DO MÉTODO
+    IndiceMassaCorporal calcular() {
 
 //      -> Novo OBJETO de escopo no MÉTODO
         IndiceMassaCorporal imc = new IndiceMassaCorporal();

@@ -4,7 +4,7 @@ public class Principal {
 
     public static void main(String[] args) {
 
-        Paciente paciente = new Paciente();
+        CalculadoraImc calculadoraImc = new CalculadoraImc();
 
 /*      -> HARD CODED
 
@@ -15,12 +15,12 @@ public class Principal {
         Scanner entrada = new Scanner(System.in);
 
         System.out.println("Digite sua altura: ");
-        paciente.altura = entrada.nextDouble();
+        calculadoraImc.altura = entrada.nextDouble();
 
         System.out.println("Digite seu peso: ");
-        paciente.peso = entrada.nextDouble();
+        calculadoraImc.peso = entrada.nextDouble();
 
-        IndiceMassaCorporal imc = paciente.calcularIndiceMassaCorporal();
+        IndiceMassaCorporal imc = calculadoraImc.calcular();
 
         if (imc.estaComObesidade()) {
 
