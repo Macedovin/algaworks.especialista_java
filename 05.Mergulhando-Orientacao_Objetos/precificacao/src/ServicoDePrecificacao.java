@@ -5,7 +5,7 @@ public class ServicoDePrecificacao {
 
         // Poderia ter cálculos muito mais complexos aqui
 
-        produto.precoVenda = produto.precoCompra * ((percentualMargemLucro / 100) + 1);
+        produto.precoVenda = produto.precoCusto * ((percentualMargemLucro / 100) + 1);
     }
     /*
 //  -> REFATORANDO para que o método tenha RETORNO
