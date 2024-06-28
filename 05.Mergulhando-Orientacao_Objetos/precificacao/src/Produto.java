@@ -1,8 +1,18 @@
 public class Produto {
 
+    // -> Separa VARIÁVEIS ESTÁTICAS da DE INSTÂNCIA
     static double custoEmbalagem;
+
     double precoCusto;
     double precoVenda;
+
+    void alterarCustoEmbalagem(double custoEmbalagem) {
+
+        // -> Abaixo, estaria referenciando como VARIÁVEL DE INSTÂNCIA uma DE CLASSE
+        //  this.custoEmbalagem = custoEmbalagem;
+
+        Produto.custoEmbalagem = custoEmbalagem;  // Referencia correta
+    }
 
 //  -> Mudando o nome do PARÂMETRO
 //    void alterarPrecoCusto(double novoPrecoCusto) {
