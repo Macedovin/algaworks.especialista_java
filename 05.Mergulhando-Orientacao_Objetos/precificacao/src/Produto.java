@@ -1,6 +1,6 @@
 public class Produto {
 
-    // -> Preco de custo NÃO é o mesmo que preço de compra
+    static double custoEmbalagem;
     double precoCusto;
     double precoVenda;
 
@@ -13,5 +13,11 @@ public class Produto {
 //        precoCusto = novoPrecoCusto;
         // -> Utilizo a PALAVRA-CHAVE "this"
         this.precoCusto = precoCusto;
+    }
+
+    void imprimirCustoEmbalagem() {
+
+        // -> BOA PRÁTICA - Deixar explícito o acesso a VARIÁVEL ESTÁTICA
+        System.out.printf("Custo com embalagem: %.2f%n", Produto.custoEmbalagem);
     }
 }

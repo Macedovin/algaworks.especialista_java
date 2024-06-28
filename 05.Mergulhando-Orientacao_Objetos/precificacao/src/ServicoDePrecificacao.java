@@ -1,21 +1,15 @@
 public class ServicoDePrecificacao {
 
-    // -> O MÉTODO agora rcebe um OBEJTO como PARÂMETRO
+    // -> O MÉTODO agora também recebe um OBJETO como PARÂMETRO
+    // - ANTES, somente um tipo primitivo
     void definirPrecoVenda(Produto produto, double percentualMargemLucro) {
 
         // Poderia ter cálculos muito mais complexos aqui
 
-        produto.precoVenda = produto.precoCusto * ((percentualMargemLucro / 100) + 1);
+        double precoVendaCalculado = produto.precoCusto * ((percentualMargemLucro / 100) + 1);
+        // -> Fazendo uso da VARIÁVEL ESTÁTICA
+        precoVendaCalculado += Produto.custoEmbalagem;
+
+        produto.precoVenda = precoVendaCalculado;
     }
-    /*
-//  -> REFATORANDO para que o método tenha RETORNO
-//    double calcularPrecoVenda(double precoCusto) {
-    void calcularPrecoVenda(double precoCusto) {
-
-        // Adiciona 20% de margem de lucro
-        // return precoCusto = precoCusto * 1.20;
-        precoCusto = precoCusto * 1.20;
-
-        // Faz várias outras coisas
-    }*/
 }
